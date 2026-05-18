@@ -1,0 +1,29 @@
+domain: finance
+columns:
+  ebitda:
+    concept: EBITDA
+    unit: USD
+    aliases: [ebitda, operating_income]
+  pe_ratio:
+    concept: Price to Earnings Ratio
+    unit: ratio
+    expected_range: [10, 25]
+    aliases: [pe_ratio, p_e, pe]
+  dso:
+    concept: Days Sales Outstanding
+    unit: days
+    expected_range: [30, 45]
+    severity_thresholds:
+      mild: [46, 60]
+      moderate: [61, 90]
+      extreme: [91, 365]
+    aliases: [dso, days_sales_outstanding]
+  current_ratio:
+    concept: Current Ratio
+    unit: ratio
+    expected_range: [1.5, 3.0]
+    aliases: [current_ratio]
+  revenue_growth:
+    concept: Revenue Growth
+    unit: percent
+    aliases: [revenue_growth, yoy_growth, revenue_yoy]

@@ -1,0 +1,43 @@
+domain: healthcare
+columns:
+  bmi:
+    concept: Body Mass Index
+    unit: kg/m^2
+    expected_range: [18.5, 24.9]
+    severity_thresholds:
+      mild: [25.0, 29.9]
+      moderate: [30.0, 39.9]
+      extreme: [40.0, 100.0]
+    aliases: [bmi, body_mass_index, bmi_kg_m2]
+  hba1c:
+    concept: Glycated Hemoglobin
+    unit: percent
+    expected_range: [4.0, 5.6]
+    severity_thresholds:
+      mild: [5.7, 6.4]
+      moderate: [6.5, 9.0]
+      extreme: [9.0, 20.0]
+    aliases: [hba1c, a1c, glycated_hemoglobin, hgba1c]
+  systolic_bp:
+    concept: Systolic Blood Pressure
+    unit: mmHg
+    expected_range: [90, 119]
+    severity_thresholds:
+      mild: [120, 139]
+      moderate: [140, 179]
+      extreme: [180, 300]
+    aliases: [systolic_bp, sbp, systolic, systolic_pressure]
+  diastolic_bp:
+    concept: Diastolic Blood Pressure
+    unit: mmHg
+    expected_range: [60, 79]
+    severity_thresholds:
+      mild: [80, 89]
+      moderate: [90, 119]
+      extreme: [120, 200]
+    aliases: [diastolic_bp, dbp, diastolic, diastolic_pressure]
+  age:
+    concept: Age
+    unit: years
+    expected_range: [18, 90]
+    aliases: [age, patient_age]
